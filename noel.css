@@ -1,21 +1,21 @@
-#nen,img    {
-   
-    height: 100vh;
-    width: 100vw;
-    background-position: center;
-    /* object-fit: cover; */
-  
-    background-size: cover;
-    background-repeat: no-repeat;
+.hinh{
+    position: relative  ;
 }
+img{
+    height: 100%;
+    width: 100%;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-h1,p{
+.tieude{
+
+    position: absolute;
     color: aliceblue;
-    z-index: 99;
+   
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
 
@@ -26,6 +26,7 @@ h1,p{
       
 }
 h1{
+   
     font-size: 50px;
     
 }
