@@ -1,5 +1,5 @@
-#nen{
-    background-image: url(img/hinh-nen-Noel-CareerBuilder-7.jpg);
+#nen,img    {
+   
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -15,7 +15,7 @@
 }
 h1,p{
     color: aliceblue;
-    
+    z-index: 99;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
 
