@@ -1,12 +1,15 @@
 .hinh{
     position: relative  ;
 }
+
 img{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
 }
-
+body{
+    background-image: linear-gradient(90deg,#cec3ed,#f3c5ec);
+}
 *{
     padding: 0;
     margin: 0;
@@ -33,4 +36,103 @@ h1{
 }
 p{
     font-size: 25px;
+}
+.anh{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 10px; */
+    flex-wrap: wrap;
+}
+.anh>img{
+    /* width: 50vw; */
+    height: 650px;
+    width: 550px;
+    object-fit: cover;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.nhan{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+button{
+    padding: 20px;
+    font-size: 20px;
+    background-image: linear-gradient(90deg, #b378f3,#eca8c0);
+    color: #fff;
+    border-radius: 20px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.thongtin{
+    position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+}
+.thongtin.show{
+    display: flex;
+    animation: slideshow 1s ease-in-out;
+}
+@keyframes slideshow{
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+#form{
+    width: 90%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-image: linear-gradient(90deg,#1ca7ec,#7bd5f5);
+    color: #fff;
+    border-radius: 20px;
+    overflow: scroll;
+    height: 90%;
+    
+}
+h1{
+   width: 98%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fa-solid {
+    font-size: 20px;
+    width: 2%;
+}
+.top{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .anh>img{
+        width: 300px;
+        height: 450px;
+        margin: 20px;
+    }
 }
