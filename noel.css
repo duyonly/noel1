@@ -138,7 +138,7 @@ h1{
 }
 @media only screen and (max-width: 300px){
     .anh>img{
-        margin-left: 30px;
+        margin-left: 20px;
         width: 50vw;
         height: 350px;
         margin: 20px;
