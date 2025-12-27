@@ -136,3 +136,10 @@ h1{
         margin: 20px;
     }
 }
+@media only screen and (max-width: 300px){
+    .anh>img{
+        width: 250px;
+        height: 350px;
+        margin: 20px;
+    }
+}
